@@ -1,17 +1,24 @@
-/* Задание на урок:
+'user strict'
 
-1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
+function returnNeighboringNumbers(numb) {
+    let arr=[numb-1,numb,numb+1];
+    return(arr);
+}
+ console.log(returnNeighboringNumbers(5));
 
-2) Сделать так, чтобы пользователь не мог оставить ответ в виде пустой строки,
-отменить ответ или ввести название фильма длинее, чем 50 символов. Если это происходит - 
-возвращаем пользователя к вопросам опять
+ function getMathResult (base, iter) {
+    if (typeof(iter) == "number" && iter >= 0) {
+        result = base;
+        for (let i = 1; i<= iter-1; i++){
+           result = result + '---' + base*(i+1);
+        } 
+    } else {result = base;}
+    return result;
+ }
+ console.log(getMathResult(5,3));
+ console.log(getMathResult(3,10));
 
-3) При помощи условий проверить  personalMovieDB.count, и если он меньше 10 - вывести сообщение
-"Просмотрено довольно мало фильмов", если от 10 до 30 - "Вы классический зритель", а если больше - 
-"Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
-
-4) Потренироваться и переписать цикл еще двумя способами*/
-
-'use strict';
-
-// Код возьмите из предыдущего домашнего задания
+ function sayHello(name) {
+    return  result = ("Привет," + name + "!");  
+  } 
+  console.log(sayHello("Oleh"));
