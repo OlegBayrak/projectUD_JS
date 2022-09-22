@@ -12,10 +12,15 @@ const personalMovieDB = {
     privat : false
 };
 
-alert(personalMovieDB.count);
-personalMovieDB.movies[0] = prompt('Один из последних просмотренных фильмов?', 'MOVIE'); 
-alert(personalMovieDB.movies[0]);
-personalMovieDB.movies[1] = prompt('Один из последних просмотренных фильмов?', 'MOVIE'); 
-alert(personalMovieDB.movies[1]);
+//*alert(personalMovieDB.count);
+//personalMovieDB.movies[0] = prompt('Один из последних просмотренных фильмов?', 'MOVIE'); 
+//alert(personalMovieDB.movies[0]);
+//personalMovieDB.movies[1] = prompt('Один из последних просмотренных фильмов?', 'MOVIE'); 
+//alert(personalMovieDB.movies[1]);
+
+
+for (let i = 1; i <= personalMovieDB.count; i++) {
+    personalMovieDB.movies[i-1] = prompt('Один из последних просмотренных фильмов?', 'MOVIE'); 
+}
 
 console.log(personalMovieDB);
