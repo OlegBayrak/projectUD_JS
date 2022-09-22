@@ -18,7 +18,9 @@ function returnNeighboringNumbers(numb) {
  console.log(getMathResult(5,3));
  console.log(getMathResult(3,10));
 
- function sayHello(name) {
-    return  result = ("Привет," + name + "!");  
-  } 
+// Место для первой задачи
+function sayHello(name) {
+    let result = ("Привет," + name + "!");
+  return result;   
+}
   console.log(sayHello("Oleh"));
