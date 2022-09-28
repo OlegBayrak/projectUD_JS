@@ -29,13 +29,13 @@ console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
 
 
 function showExperience(plan) {
-    const {languages, programmingLangs, exp} = personalPlanPeter.skills;
+    const {languages, programmingLangs, exp} = personalPlanPeter.skills; //деконструкция
     return exp;
     }
 
     function showProgrammingLangs(plan) {
         let result = "";
-        for (let key in plan.skills.programmingLangs){
+        for (let key in plan.skills.programmingLangs){ // перебор обьекта 
             if (plan.skills.programmingLangs[key] == ''){
                 result = result + `Язык ${key} изучен на undefined` + '\n'; 
             } else{
